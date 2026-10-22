@@ -29,7 +29,9 @@ jobs:
       - name: Set up Gradle and validate wrapper
         uses: gradle/actions/setup-gradle@3f5f9adaf7d9fecd50b5935e54106014257a94e6 # v6
       - name: Install required Android SDK packages
-        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+        run: >-
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          'platforms;android-35' 'build-tools;35.0.0'
       - name: Check public source
         run: |
           python3 -m unittest discover -s scripts -p 'test_*.py'
