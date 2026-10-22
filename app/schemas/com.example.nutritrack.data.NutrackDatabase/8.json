@@ -1,0 +1,952 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 8,
+    "identityHash": "78678bc8c78f9bf8b9111b2515e1b810",
+    "entities": [
+      {
+        "tableName": "patients",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`userId` INTEGER NOT NULL, `phoneNumber` TEXT NOT NULL, `name` TEXT NOT NULL, `sex` TEXT NOT NULL, `hEIFAtotalscoreMale` REAL NOT NULL, `hEIFAtotalscoreFemale` REAL NOT NULL, `discretionaryHEIFAscoreMale` REAL NOT NULL, `discretionaryHEIFAscoreFemale` REAL NOT NULL, `discretionaryservesize` REAL NOT NULL, `vegetablesHEIFAscoreMale` REAL NOT NULL, `vegetablesHEIFAscoreFemale` REAL NOT NULL, `vegetableswithlegumesallocatedservesize` REAL NOT NULL, `legumesallocatedVegetables` REAL NOT NULL, `vegetablesvariationsscore` REAL NOT NULL, `vegetablesCruciferous` REAL NOT NULL, `vegetablesTuberandbulb` REAL NOT NULL, `vegetablesOther` REAL NOT NULL, `legumes` REAL NOT NULL, `vegetablesGreen` REAL NOT NULL, `vegetablesRedandorange` REAL NOT NULL, `fruitHEIFAscoreMale` REAL NOT NULL, `fruitHEIFAscoreFemale` REAL NOT NULL, `fruitservesize` REAL NOT NULL, `fruitvariationsscore` REAL NOT NULL, `fruitPome` REAL NOT NULL, `fruitTropicalandsubtropical` REAL NOT NULL, `fruitBerry` REAL NOT NULL, `fruitStone` REAL NOT NULL, `fruitCitrus` REAL NOT NULL, `fruitOther` REAL NOT NULL, `grainsandcerealsHEIFAscoreMale` REAL NOT NULL, `grainsandcerealsHEIFAscoreFemale` REAL NOT NULL, `grainsandcerealsservesize` REAL NOT NULL, `grainsandcerealsNonwholegrains` REAL NOT NULL, `wholegrainsHEIFAscoreMale` REAL NOT NULL, `wholegrainsHEIFAscoreFemale` REAL NOT NULL, `wholegrainsservesize` REAL NOT NULL, `meatandalternativesHEIFAscoreMale` REAL NOT NULL, `meatandalternativesHEIFAscoreFemale` REAL NOT NULL, `meatandalternativeswithlegumesallocatedservesize` REAL NOT NULL, `legumesallocatedMeatandalternatives` REAL NOT NULL, `dairyandalternativesHEIFAscoreMale` REAL NOT NULL, `dairyandalternativesHEIFAscoreFemale` REAL NOT NULL, `dairyandalternativesservesize` REAL NOT NULL, `sodiumHEIFAscoreMale` REAL NOT NULL, `sodiumHEIFAscoreFemale` REAL NOT NULL, `sodiummgmilligrams` REAL NOT NULL, `alcoholHEIFAscoreMale` REAL NOT NULL, `alcoholHEIFAscoreFemale` REAL NOT NULL, `alcoholstandarddrinks` REAL NOT NULL, `waterHEIFAscoreMale` REAL NOT NULL, `waterHEIFAscoreFemale` REAL NOT NULL, `water` REAL NOT NULL, `waterTotalmL` REAL NOT NULL, `beverageTotalmL` REAL NOT NULL, `sugarHEIFAscoreMale` REAL NOT NULL, `sugarHEIFAscoreFemale` REAL NOT NULL, `sugar` REAL NOT NULL, `saturatedFatHEIFAscoreMale` REAL NOT NULL, `saturatedFatHEIFAscoreFemale` REAL NOT NULL, `saturatedFat` REAL NOT NULL, `unsaturatedFatHEIFAscoreMale` REAL NOT NULL, `unsaturatedFatHEIFAscoreFemale` REAL NOT NULL, `unsaturatedFatservesize` REAL NOT NULL, PRIMARY KEY(`userId`))",
+        "fields": [
+          {
+            "fieldPath": "userId",
+            "columnName": "userId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phoneNumber",
+            "columnName": "phoneNumber",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sex",
+            "columnName": "sex",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hEIFAtotalscoreMale",
+            "columnName": "hEIFAtotalscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hEIFAtotalscoreFemale",
+            "columnName": "hEIFAtotalscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "discretionaryHEIFAscoreMale",
+            "columnName": "discretionaryHEIFAscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "discretionaryHEIFAscoreFemale",
+            "columnName": "discretionaryHEIFAscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "discretionaryservesize",
+            "columnName": "discretionaryservesize",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vegetablesHEIFAscoreMale",
+            "columnName": "vegetablesHEIFAscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vegetablesHEIFAscoreFemale",
+            "columnName": "vegetablesHEIFAscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vegetableswithlegumesallocatedservesize",
+            "columnName": "vegetableswithlegumesallocatedservesize",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "legumesallocatedVegetables",
+            "columnName": "legumesallocatedVegetables",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vegetablesvariationsscore",
+            "columnName": "vegetablesvariationsscore",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vegetablesCruciferous",
+            "columnName": "vegetablesCruciferous",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vegetablesTuberandbulb",
+            "columnName": "vegetablesTuberandbulb",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vegetablesOther",
+            "columnName": "vegetablesOther",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "legumes",
+            "columnName": "legumes",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vegetablesGreen",
+            "columnName": "vegetablesGreen",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vegetablesRedandorange",
+            "columnName": "vegetablesRedandorange",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fruitHEIFAscoreMale",
+            "columnName": "fruitHEIFAscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fruitHEIFAscoreFemale",
+            "columnName": "fruitHEIFAscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fruitservesize",
+            "columnName": "fruitservesize",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fruitvariationsscore",
+            "columnName": "fruitvariationsscore",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fruitPome",
+            "columnName": "fruitPome",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fruitTropicalandsubtropical",
+            "columnName": "fruitTropicalandsubtropical",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fruitBerry",
+            "columnName": "fruitBerry",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fruitStone",
+            "columnName": "fruitStone",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fruitCitrus",
+            "columnName": "fruitCitrus",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fruitOther",
+            "columnName": "fruitOther",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "grainsandcerealsHEIFAscoreMale",
+            "columnName": "grainsandcerealsHEIFAscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "grainsandcerealsHEIFAscoreFemale",
+            "columnName": "grainsandcerealsHEIFAscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "grainsandcerealsservesize",
+            "columnName": "grainsandcerealsservesize",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "grainsandcerealsNonwholegrains",
+            "columnName": "grainsandcerealsNonwholegrains",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wholegrainsHEIFAscoreMale",
+            "columnName": "wholegrainsHEIFAscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wholegrainsHEIFAscoreFemale",
+            "columnName": "wholegrainsHEIFAscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wholegrainsservesize",
+            "columnName": "wholegrainsservesize",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "meatandalternativesHEIFAscoreMale",
+            "columnName": "meatandalternativesHEIFAscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "meatandalternativesHEIFAscoreFemale",
+            "columnName": "meatandalternativesHEIFAscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "meatandalternativeswithlegumesallocatedservesize",
+            "columnName": "meatandalternativeswithlegumesallocatedservesize",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "legumesallocatedMeatandalternatives",
+            "columnName": "legumesallocatedMeatandalternatives",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dairyandalternativesHEIFAscoreMale",
+            "columnName": "dairyandalternativesHEIFAscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dairyandalternativesHEIFAscoreFemale",
+            "columnName": "dairyandalternativesHEIFAscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dairyandalternativesservesize",
+            "columnName": "dairyandalternativesservesize",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sodiumHEIFAscoreMale",
+            "columnName": "sodiumHEIFAscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sodiumHEIFAscoreFemale",
+            "columnName": "sodiumHEIFAscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sodiummgmilligrams",
+            "columnName": "sodiummgmilligrams",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alcoholHEIFAscoreMale",
+            "columnName": "alcoholHEIFAscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alcoholHEIFAscoreFemale",
+            "columnName": "alcoholHEIFAscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alcoholstandarddrinks",
+            "columnName": "alcoholstandarddrinks",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "waterHEIFAscoreMale",
+            "columnName": "waterHEIFAscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "waterHEIFAscoreFemale",
+            "columnName": "waterHEIFAscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "water",
+            "columnName": "water",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "waterTotalmL",
+            "columnName": "waterTotalmL",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "beverageTotalmL",
+            "columnName": "beverageTotalmL",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sugarHEIFAscoreMale",
+            "columnName": "sugarHEIFAscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sugarHEIFAscoreFemale",
+            "columnName": "sugarHEIFAscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sugar",
+            "columnName": "sugar",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "saturatedFatHEIFAscoreMale",
+            "columnName": "saturatedFatHEIFAscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "saturatedFatHEIFAscoreFemale",
+            "columnName": "saturatedFatHEIFAscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "saturatedFat",
+            "columnName": "saturatedFat",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unsaturatedFatHEIFAscoreMale",
+            "columnName": "unsaturatedFatHEIFAscoreMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unsaturatedFatHEIFAscoreFemale",
+            "columnName": "unsaturatedFatHEIFAscoreFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unsaturatedFatservesize",
+            "columnName": "unsaturatedFatservesize",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "userId"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "food_intake",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `patientUserId` INTEGER NOT NULL, `submissionDate` INTEGER NOT NULL, `foodName` TEXT NOT NULL DEFAULT 'Legacy intake', `vegetablesServings` REAL NOT NULL, `fruitServings` REAL NOT NULL, `grainsServings` REAL NOT NULL, `meatServings` REAL NOT NULL, `dairyServings` REAL NOT NULL, `discretionaryServings` REAL NOT NULL, `cruciferous` REAL NOT NULL, `tuberAndBulb` REAL NOT NULL, `greenVegetables` REAL NOT NULL, `redOrangeVegetables` REAL NOT NULL, `otherVegetables` REAL NOT NULL, `legumes` REAL NOT NULL, `pomefruits` REAL NOT NULL, `tropicalFruits` REAL NOT NULL, `berryFruits` REAL NOT NULL, `stoneFruits` REAL NOT NULL, `citrusFruits` REAL NOT NULL, `otherFruits` REAL NOT NULL, `wholeGrains` REAL NOT NULL, `nonWholeGrains` REAL NOT NULL, `sodiumMg` REAL NOT NULL, `alcoholStandardDrinks` REAL NOT NULL, `waterMl` REAL NOT NULL, `totalBeverageMl` REAL NOT NULL, `sugarG` REAL NOT NULL, `saturatedFatG` REAL NOT NULL, `unsaturatedFatG` REAL NOT NULL, `questionnaireResponses` TEXT NOT NULL, FOREIGN KEY(`patientUserId`) REFERENCES `patients`(`userId`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "patientUserId",
+            "columnName": "patientUserId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "submissionDate",
+            "columnName": "submissionDate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodName",
+            "columnName": "foodName",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'Legacy intake'"
+          },
+          {
+            "fieldPath": "vegetablesServings",
+            "columnName": "vegetablesServings",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fruitServings",
+            "columnName": "fruitServings",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "grainsServings",
+            "columnName": "grainsServings",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "meatServings",
+            "columnName": "meatServings",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dairyServings",
+            "columnName": "dairyServings",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "discretionaryServings",
+            "columnName": "discretionaryServings",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cruciferous",
+            "columnName": "cruciferous",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tuberAndBulb",
+            "columnName": "tuberAndBulb",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "greenVegetables",
+            "columnName": "greenVegetables",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "redOrangeVegetables",
+            "columnName": "redOrangeVegetables",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "otherVegetables",
+            "columnName": "otherVegetables",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "legumes",
+            "columnName": "legumes",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pomefruits",
+            "columnName": "pomefruits",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tropicalFruits",
+            "columnName": "tropicalFruits",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "berryFruits",
+            "columnName": "berryFruits",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stoneFruits",
+            "columnName": "stoneFruits",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "citrusFruits",
+            "columnName": "citrusFruits",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "otherFruits",
+            "columnName": "otherFruits",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wholeGrains",
+            "columnName": "wholeGrains",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nonWholeGrains",
+            "columnName": "nonWholeGrains",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sodiumMg",
+            "columnName": "sodiumMg",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alcoholStandardDrinks",
+            "columnName": "alcoholStandardDrinks",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "waterMl",
+            "columnName": "waterMl",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalBeverageMl",
+            "columnName": "totalBeverageMl",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sugarG",
+            "columnName": "sugarG",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "saturatedFatG",
+            "columnName": "saturatedFatG",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unsaturatedFatG",
+            "columnName": "unsaturatedFatG",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "questionnaireResponses",
+            "columnName": "questionnaireResponses",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_food_intake_patientUserId_submissionDate",
+            "unique": false,
+            "columnNames": [
+              "patientUserId",
+              "submissionDate"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_food_intake_patientUserId_submissionDate` ON `${TABLE_NAME}` (`patientUserId`, `submissionDate`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "patients",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "patientUserId"
+            ],
+            "referencedColumns": [
+              "userId"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "user_accounts",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`userId` INTEGER NOT NULL, `phoneNumber` TEXT NOT NULL, `name` TEXT NOT NULL, `password` TEXT NOT NULL, `registrationDate` INTEGER NOT NULL, `lastLoginTime` INTEGER NOT NULL, PRIMARY KEY(`userId`), FOREIGN KEY(`userId`) REFERENCES `patients`(`userId`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "userId",
+            "columnName": "userId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phoneNumber",
+            "columnName": "phoneNumber",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "password",
+            "columnName": "password",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "registrationDate",
+            "columnName": "registrationDate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastLoginTime",
+            "columnName": "lastLoginTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "userId"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_user_accounts_userId",
+            "unique": false,
+            "columnNames": [
+              "userId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_user_accounts_userId` ON `${TABLE_NAME}` (`userId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "patients",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "userId"
+            ],
+            "referencedColumns": [
+              "userId"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "nutricoach_tips",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `patientUserId` INTEGER NOT NULL, `tipContent` TEXT NOT NULL, `tipType` TEXT NOT NULL, `timestamp` INTEGER NOT NULL, `userFruitScore` REAL NOT NULL, `aiModel` TEXT NOT NULL, FOREIGN KEY(`patientUserId`) REFERENCES `patients`(`userId`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "patientUserId",
+            "columnName": "patientUserId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tipContent",
+            "columnName": "tipContent",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tipType",
+            "columnName": "tipType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userFruitScore",
+            "columnName": "userFruitScore",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "aiModel",
+            "columnName": "aiModel",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_nutricoach_tips_patientUserId",
+            "unique": false,
+            "columnNames": [
+              "patientUserId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_nutricoach_tips_patientUserId` ON `${TABLE_NAME}` (`patientUserId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "patients",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "patientUserId"
+            ],
+            "referencedColumns": [
+              "userId"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "seed_metadata",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`seedName` TEXT NOT NULL, `version` INTEGER NOT NULL, `importedAtEpochMillis` INTEGER NOT NULL, `sourceRowCount` INTEGER NOT NULL, PRIMARY KEY(`seedName`))",
+        "fields": [
+          {
+            "fieldPath": "seedName",
+            "columnName": "seedName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "importedAtEpochMillis",
+            "columnName": "importedAtEpochMillis",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceRowCount",
+            "columnName": "sourceRowCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "seedName"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "questionnaire_profiles",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`userId` INTEGER NOT NULL, `canEatFruits` INTEGER NOT NULL, `canEatVegetables` INTEGER NOT NULL, `canEatGrains` INTEGER NOT NULL, `canEatRedMeat` INTEGER NOT NULL, `canEatSeafood` INTEGER NOT NULL, `canEatPoultry` INTEGER NOT NULL, `canEatFish` INTEGER NOT NULL, `canEatEggs` INTEGER NOT NULL, `canEatNutsAndSeeds` INTEGER NOT NULL, `selectedPersona` TEXT NOT NULL, `biggestMealTime` TEXT NOT NULL, `sleepTime` TEXT NOT NULL, `wakeUpTime` TEXT NOT NULL, `legacyPreferencesMigrationVersion` INTEGER NOT NULL, `updatedAtEpochMillis` INTEGER NOT NULL, PRIMARY KEY(`userId`), FOREIGN KEY(`userId`) REFERENCES `patients`(`userId`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "userId",
+            "columnName": "userId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "canEatFruits",
+            "columnName": "canEatFruits",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "canEatVegetables",
+            "columnName": "canEatVegetables",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "canEatGrains",
+            "columnName": "canEatGrains",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "canEatRedMeat",
+            "columnName": "canEatRedMeat",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "canEatSeafood",
+            "columnName": "canEatSeafood",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "canEatPoultry",
+            "columnName": "canEatPoultry",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "canEatFish",
+            "columnName": "canEatFish",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "canEatEggs",
+            "columnName": "canEatEggs",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "canEatNutsAndSeeds",
+            "columnName": "canEatNutsAndSeeds",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "selectedPersona",
+            "columnName": "selectedPersona",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "biggestMealTime",
+            "columnName": "biggestMealTime",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sleepTime",
+            "columnName": "sleepTime",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wakeUpTime",
+            "columnName": "wakeUpTime",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "legacyPreferencesMigrationVersion",
+            "columnName": "legacyPreferencesMigrationVersion",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAtEpochMillis",
+            "columnName": "updatedAtEpochMillis",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "userId"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "patients",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "userId"
+            ],
+            "referencedColumns": [
+              "userId"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '78678bc8c78f9bf8b9111b2515e1b810')"
+    ]
+  }
+}

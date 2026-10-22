@@ -1,0 +1,46 @@
+*.iml
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+.DS_Store
+.gradle/
+.idea/
+**/build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local service configuration, credentials and exports
+app/google-services.json
+app/src/**/google-services.json
+google-services*.json
+.env
+.env.*
+!.env.example
+*service-account*.json
+*serviceAccount*.json
+credentials*.json
+firebase-adminsdk*.json
+*.pfx
+*.mobileprovision
+.kotlin/
+*.log
+*.hprof
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.apk
+*.aab
+*.apks
+*.zip
+# Private handoff reports must never be published, including from a fresh clone.
+/docs/context-handoff/
+
+# Python publication checks
+__pycache__/
+*.py[cod]
