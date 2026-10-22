@@ -1,6 +1,6 @@
 # NutriTrack 当前开发状态
 
-> **2026-10-22 公开副本改进（本目录的最新状态）：** 本副本没有 `.git`，下方分支、HEAD、stash、提交和“当前工作区”叙述均属于原开发目录历史，不描述此副本。新增样例注册辅助、AI 配置提示与生成按钮控制、SettingsViewModel、明确的样例评分说明、全画像水果查询、README 截图与 CI。Settings 的 R2 边界例外在此副本已关闭；R3/R4 仍待处理。本次 164 项 JVM、21 项隔离 API 35 设备测试与 4 项发布工具测试通过；Debug/仪器 APK 构建、Release Kotlin 编译通过，lint 0 errors / 34 warnings，真实 AI 请求 0。GitHub 远端 CI 尚未运行。详细范围见 [PUBLIC_RELEASE.md](docs/PUBLIC_RELEASE.md)。
+> **2026-10-22 公开副本改进（本目录的最新状态）：** 本公开版本由不含原仓库 Git 历史的导出副本建立；下方旧分支、HEAD、stash、提交和“当前工作区”叙述均属于原开发目录历史。公开仓库的最新发布状态见本文末尾。新增样例注册辅助、AI 配置提示与生成按钮控制、SettingsViewModel、明确的样例评分说明、全画像水果查询、README 截图与 CI。Settings 的 R2 边界例外在此副本已关闭；R3/R4 仍待处理。本次 164 项 JVM、21 项隔离 API 35 设备测试与 4 项发布工具测试通过；Debug/仪器 APK 构建、Release Kotlin 编译通过，lint 0 errors / 34 warnings，真实 AI 请求 0。本段为公开副本改进时的本地验收；后续 GitHub CI 结果见第 13 节。详细范围见 [PUBLIC_RELEASE.md](docs/PUBLIC_RELEASE.md)。
 
 > **2026-10-22 隐私清理更新优先于下方旧快照。** 当前包名为 `com.example.nutritrack`；真实 Firebase 配置及本地旧 AI key 已删除，未配置 Firebase 时允许构建并由原 Gateway 拒绝模型请求。种子九行全部改为人工样例；欢迎页作者署名和院校推广信息已移除；Clinician 入口因缺少服务端授权关闭。历史文档中的包名、命令和项目标识也作了脱敏，不能作为旧环境原样重放命令。原有 Agent 日志增量保留。Git 历史、stash、私有交接和本地缓存没有清除，公开请使用无历史导出副本，见 [隐私审查](docs/PRIVACY_REVIEW.md)。本次验证结果与边界在本文末尾更新。
 
@@ -188,3 +188,12 @@ Debug XML 的原始 timestamp 是 `2026-10-17T17:16:34`（未在 XML 中显式�
 - 按用户确认的 GitHub 参考方向重写 README：产品介绍、技术徽章、四张核心界面、功能、技术栈、设计、快速开始、状态/路线图和文档入口。详细验收、历史问题和源码发布说明由既有专项文档承接。
 - 保留样例数据、AI 配置、测试范围及许可证状态的必要说明；没有添加未经验证的 CI 成功或许可徽章，没有改变应用功能。
 - 本次仅修改 README 与本状态文档，并同步到公开副本、更新分发 ZIP；执行文档链接/结构、敏感模式和归档一致性检查，未运行 Gradle、设备测试或真实 AI。前文 164/21/4 结果属于本日先前的实现验收，不是本次文档修改重新执行。
+
+## 13. 2026-10-23：GitHub 首次发布
+
+- 已发布公开仓库 [F-yHAng/NutriTrack](https://github.com/F-yHAng/NutriTrack)，默认分支 `main`。从已核查的导出副本建立独立历史，首份源码提交为 `b929f77`；未复制原仓库 `.git`，也未修改原开发目录。
+- 共 198 个白名单源码、文档、截图与 CI 文件；首次提交作者使用已核对的 GitHub no-reply 邮箱。README 的四张界面截图已在线核对正常加载，并补充仓库克隆命令、真实 CI 状态徽章和技术主题标签。
+- 首次云端检查因 `sdkmanager` 不在 runner 的 PATH 中失败；`da3ea39` 改用 `ANDROID_HOME` 下的完整命令路径，没有升级应用依赖。工作流通过 GitHub 网页提交，本机凭据权限保持原样。
+- **本次云端验证：** [Android checks #2](https://github.com/F-yHAng/NutriTrack/actions/runs/39812827996) 在 `da3ea39` 上成功，verify 耗时 6 分 16 秒。执行发布检查、4 项发布工具测试，以及 `testDebugUnitTest`、`assembleDebug`、`compileReleaseKotlin`、`compileDebugAndroidTestKotlin`、`lintDebug`。这不包含设备测试或真实 AI 请求，也不等于已验证签名 Release 安装包。
+- 本次本地重新运行发布扫描和 4 项发布工具回归测试，通过；本地未重新执行 Android 构建或设备测试。后续发布记录和 README 修改仅涉及文档，以 `[skip ci]` 提交，应用与工作流保持上述已通过版本。
+- 项目级许可证及课程衍生素材、插图的再发布权仍待作者核实；没有新增许可声明，也未创建安装包 Release。

@@ -3,6 +3,7 @@
 <p align="center">记录每日饮食，让营养计划有据可循。</p>
 
 <p align="center">
+  <a href="https://github.com/F-yHAng/NutriTrack/actions/workflows/android.yml"><img src="https://github.com/F-yHAng/NutriTrack/actions/workflows/android.yml/badge.svg" alt="Android checks" /></a>
   <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin" />
   <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose" />
   <img src="https://img.shields.io/badge/Android-15%2B-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android 15 and above" />
@@ -91,9 +92,11 @@ flowchart TD
 
 ### 运行本地功能
 
-准备 **JDK 17、Android SDK 35**，以及 **Android 15 / API 35 以上**设备或模拟器。在 Android Studio 打开项目并配置 SDK，然后运行 `app`；也可以在项目根目录构建：
+准备 **JDK 17、Android SDK 35**，以及 **Android 15 / API 35 以上**设备或模拟器。克隆仓库后，在 Android Studio 打开项目并配置 SDK，然后运行 `app`；也可以使用命令行构建：
 
 ```sh
+git clone https://github.com/F-yHAng/NutriTrack.git
+cd NutriTrack
 ./gradlew :app:assembleDebug
 ```
 

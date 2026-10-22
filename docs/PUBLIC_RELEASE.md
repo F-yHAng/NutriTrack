@@ -1,6 +1,6 @@
 # 公开版改进与验证 · 2026-10-22
 
-本轮针对 `NutriTrack-public-20261022` 公开副本改进。它没有 Git 历史，也没有可报告的当前分支/HEAD；原开发仓库的旧分支、stash 和历史验收只作背景。本轮没有提交、推送或调用真实 AI。
+本轮针对 `NutriTrack-public-20261022` 公开副本改进。改进开始时没有 Git 历史，也没有可报告的当前分支/HEAD；原开发仓库的旧分支、stash 和历史验收只作背景。本轮改进未提交、推送或调用真实 AI；后续 GitHub 发布见本文末尾。
 
 ## 已完成
 
@@ -59,3 +59,11 @@
 4. **更广泛的使用体验**：若希望面向普通用户发布，再规划饮食记录删除/撤销、本地数据导出、无障碍与更多屏幕尺寸。Android 15 以下兼容性、云同步均未承诺。
 
 README 中的运行和功能边界可以作为 GitHub 作品集说明。不要把本轮验证扩写为生产稳定性、云同步、任意 Agent 自主执行或医学有效性。
+
+## GitHub 发布 · 2026-10-23
+
+公开仓库：[F-yHAng/NutriTrack](https://github.com/F-yHAng/NutriTrack)，默认分支 `main`，从无原 Git 历史的导出副本建立，包含 198 个白名单文件。线上 README 的四张核心界面截图已确认加载正常。
+
+首次 CI 遇到 runner 的 `sdkmanager` 路径问题，已通过显式使用 `ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager` 修复。随后 [Android checks #2](https://github.com/F-yHAng/NutriTrack/actions/runs/39812827996) 在 `da3ea39` 上通过，verify 耗时 6 分 16 秒，覆盖发布检查、JVM 测试、Debug APK 构建、Release Kotlin 和仪器源码编译、lint。后续只更新文档，不改变通过检查的代码或工作流。
+
+此次云端检查未运行模拟器/真机测试、未调用真实 AI，也没有发布签名安装包。项目级许可证和素材权利确认仍是后续待办。
